@@ -5,21 +5,21 @@
 class HenrikOs < Formula
   desc "Mac development environment setup CLI"
   homepage "https://github.com/henrikkvamme/henrik-os"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/henrikkvamme/henrik-os/releases/download/v0.1.0/henrik-os_0.1.0_darwin_amd64.tar.gz"
-    sha256 "3d075855742fbb4eebb46290bc7187216ea0fa2f341447defd8bcffce077c39a"
+    url "https://github.com/henrikkvamme/henrik-os/releases/download/v0.1.1/henrik-os_0.1.1_darwin_amd64.tar.gz"
+    sha256 "f8bf5c006ac4064932cdcf9965800c0fe509721278693e98750b63e99299fab0"
 
     def install
       bin.install "henrik-os"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/henrikkvamme/henrik-os/releases/download/v0.1.0/henrik-os_0.1.0_darwin_arm64.tar.gz"
-    sha256 "d61bb0fb6ec5ac80736c05e29708f5cfbecb596a9196c6521b08fd6c4421d8b1"
+    url "https://github.com/henrikkvamme/henrik-os/releases/download/v0.1.1/henrik-os_0.1.1_darwin_arm64.tar.gz"
+    sha256 "ffd63f60094a90ac36063d974eca21f46960295f7c07e86fed8737489b34c865"
 
     def install
       bin.install "henrik-os"
